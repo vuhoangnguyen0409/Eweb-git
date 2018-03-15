@@ -1,0 +1,180 @@
+@CHARSET 'UTF-8';
+/* Scss Document */
+@mixin circle-span($width, $height) {
+	display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    height: $width;
+    width: $height;
+    background: #419cc0;
+    position: relative;
+}
+.service {
+	padding: 42px 0px 60px;
+	.h-txt01 {
+		text-align: center;
+		max-width: 600px;
+		margin: 0px auto 55px;
+		line-height: 2;
+		letter-spacing: -0.8px;
+	}
+	.h-txt02 {
+		text-align: center;
+		margin: 0px auto 55px;
+		line-height: 2;
+		font-size: 18px;
+		letter-spacing: -1.5px;
+	}
+}
+.service01 {
+	padding-bottom: 45px;
+	.bitex {
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		text-align: center;
+		padding-top: 27px;
+	}
+	p {
+		b {
+			font-size: 25px;
+			font-weight: bold;
+			display: inline-block;
+			min-width: 205px;
+			vertical-align: middle;
+			padding: 11px 0px;
+		}
+		span {
+			@include circle-span(132px, 132px);
+			a {
+				position: relative;
+				z-index: 2;
+				line-height: 110px;
+			}
+			&:hover {
+				background: #ffbc00;
+			}
+			&:hover i {
+				/*-webkit-animation: none;
+				animation: none;*/
+			}
+			img {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+	.btn-more {
+		position: relative;
+		top: -15px;
+	}
+}
+.half-float {
+	width: 50%;
+	float: left;
+	position: relative;
+	z-index: 2;
+	margin-bottom: 45px;
+}
+.half-float:nth-child(1), .half-float:nth-child(4), .half-float:nth-child(5) {
+	text-align: right;
+	padding-right: 30px;
+}
+.half-float:nth-child(2), .half-float:nth-child(3), .half-float:nth-child(6) {
+	text-align: left;
+	padding-left: 30px;
+}
+.half-float:nth-child(odd) b {
+	background: url(../img/home/gradient01.png) no-repeat right center;
+	padding-right: 20px;
+	text-align: right;
+	position: relative;
+	right: -8px;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0px;
+		left: -50px;
+		height: 100%;
+		width: 50px;
+		background: url(../img/common/gradient-after01.png);
+	}
+}
+.half-float:nth-child(even) b {
+	background: url(../img/home/gradient02.png) no-repeat left center;
+	padding-left: 20px;
+	text-align: left;
+	position: relative;
+	left: -8px;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0px;
+		right: -50px;
+		height: 100%;
+		width: 50px;
+		background: url(../img/common/gradient-after02.png);
+	}
+}
+.half-float:nth-child(odd) b:last-child {
+	display: none;
+}
+.half-float:nth-child(even) b:first-child {
+	display: none;
+}
+.service02 {
+	padding: 80px 0px 60px;
+	background: url(../img/home/bg02.png) no-repeat right center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 30px;
+		background: url(../img/home/triangle.png) no-repeat center top;
+	}
+	.icon5 {
+		text-align: center;
+		margin-bottom: 60px;
+		p {
+			display: inline-block;
+			padding: 0px 10px;
+			position: relative;
+			padding-bottom: 55px;
+			&:last-child {
+				padding-bottom: 80px;
+			}
+			span {
+				@include circle-span(176px, 176px);
+				a {
+					display: block;
+					position: relative;
+					z-index: 2;
+					line-height: 243px;
+				}
+				&:hover {
+					background: #ffbc00;
+				}
+			}
+			b {
+				display: inline-block;
+				vertical-align: middle;
+				width: 100%;
+				position: absolute;
+				text-align: center;
+				bottom: 0px;
+				left: 0px;
+				font-size: 25px;
+				font-weight: bold;
+			}
+		}
+	}
+}

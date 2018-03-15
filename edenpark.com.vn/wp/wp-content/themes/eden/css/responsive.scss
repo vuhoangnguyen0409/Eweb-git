@@ -1,0 +1,284 @@
+@CHARSET 'UTF-8';
+/* Scss Document */
+@media screen and (max-width: 1400px) {
+	/*.page-home #wrapper {
+		background-position: center top !important;
+		background-repeat: repeat-x !important;
+		background-size: auto !important;
+	}*/
+}
+//------------------------ end 1400----------------------------------
+@media screen and (max-width: 1000px) {
+	.fixed {
+		position: static !important;
+		background: none !Important;
+	}
+@-webkit-keyframes Anicircle {
+ 0% {
+ box-shadow:0 0 0 rgba(65,156,192,0);
+ border:1px solid rgba(65,156,192,0);
+ transform: scale(1);
+}
+ 70% {
+ box-shadow:0 0 50px rgba(65,156,192,1);
+ border: 2px solid rgba(65,156,192,1);
+ transform: scale(1.2);
+}
+ 100% {
+ box-shadow:0 0 60px rgba(65,156,192,0);
+ border:0 solid rgba(65,255,192,0);
+ transform: scale(1.5);
+}
+}
+ @keyframes Anicircle {
+ 0% {
+ box-shadow:0 0 0 rgba(65,156,192,0);
+ border:1px solid rgba(65,156,192,0);
+ transform: scale(1);
+}
+ 70% {
+ box-shadow:0 0 50px rgba(65,156,192,1);
+ border: 2px solid rgba(65,156,192,1);
+ transform: scale(1.2);
+}
+ 100% {
+ box-shadow:0 0 60px rgba(65,156,192,0);
+ border:0 solid rgba(65,255,192,0);
+ transform: scale(1.5);
+}
+	}
+	body { 
+		 font-size: 1em; 
+	}
+	.inner, .contact-inner {
+		padding: 0px 10px;
+	}
+	h2.headline {
+		font-size: 30px;
+	}
+	.service p b {
+		font-size: 18px !important;
+		padding: 10px 0px !important;
+		position: static !important;
+		min-width: auto;
+	}
+	.service01 {
+		padding: 25px 0px 60px;
+		position: relative;
+		overflow: hidden;
+		.bitex {
+			margin-bottom: 20px;
+			bottom: 25%;
+		}
+		p span {
+			display: block;
+			margin: auto;
+		}
+		p b {
+			text-align: center !important;
+			background: none !Important;
+		}
+	}
+	.half-float {
+		margin-bottom: 10px;
+		text-align: center !important;
+		min-height: 130px;
+		padding: 10px !important;
+	}
+	.half-float b:last-child {
+		display: block !important;
+	}
+	.half-float b:first-child, .half-float:nth-child(odd) b:after, .half-float:nth-child(even) b:after, header .tel :after {
+		display: none !important;
+	}
+	.socials {
+		position: static;
+		text-align: center;
+		p {
+			display: inline-block;
+			margin: 10px 4px 0px;
+		}
+	}
+	.service02 {
+		.icon5 p {
+			margin-bottom: 30px;
+		}
+	}
+	#pagetop {
+		right: 5px !Important;
+		img {
+			opacity: 1 !Important;
+		}
+	}
+	.service-wrapper .service-item {
+		padding: 30px 10px;
+	}
+	.inner1200 {
+		padding: 5%;
+	}
+	.intro .ms {
+		float: none;
+		margin: auto;
+		background: #fff url(../img/content/an.png) no-repeat right bottom;
+		color: darkslateblue;
+	}
+	.intro .an {
+		position: static;
+		text-align: center;
+		display: none;
+	}
+}
+//------------------------ end 1000----------------------------------
+@media screen and (max-width: 768px) {
+	h2.page-title {
+		margin: 10px 0 90px;
+		text-shadow: rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 0.540302px 0.841471px 0px, rgb(255, 255, 255) -0.416147px 0.909297px 0px, rgb(255, 255, 255) -0.989992px 0.14112px 0px, rgb(255, 255, 255) -0.653644px -0.756802px 0px, rgb(255, 255, 255) 0.283662px -0.958924px 0px, rgb(255, 255, 255) 0.96017px -0.279415px 0px;
+	}
+	h2.page-title b {
+		top: 70px;
+		font-size: 16px;
+		text-shadow: rgb(255, 255, 255) 1px 0px 0px, rgb(255, 255, 255) 0.540302px 0.841471px 0px, rgb(255, 255, 255) -0.416147px 0.909297px 0px, rgb(255, 255, 255) -0.989992px 0.14112px 0px, rgb(255, 255, 255) -0.653644px -0.756802px 0px, rgb(255, 255, 255) 0.283662px -0.958924px 0px, rgb(255, 255, 255) 0.96017px -0.279415px 0px;
+	}
+	.blog-left {
+		float: none;
+		max-width: 290px;
+		width: auto;
+		margin: 0px auto 30px;
+		border-right: 0px;
+	}
+	.blog-right {
+		width: 100%;
+		float: none;
+	}
+	.blog-right .btn-more a {
+		margin-bottom: 50px;
+	}
+	.intro {
+		margin-bottom: 30px;
+	}
+	.c-info, .advisor {
+		padding: 25px 0px 30px;
+	}
+	
+}
+//------------------------ end 768----------------------------------
+@media screen and (max-width: 480px) {
+	.page-home #wrapper {
+    	background: url(../img/home/bg01.png) center top/cover;
+	}	
+	.service01 .btn-more {
+		position: static;
+	}
+	.socials p {
+		float: left;
+		width: 25%;
+		margin: 0px;
+		padding: 10px 3px 0px;
+		position: static;
+	}
+	h2.headline {
+		font-size: 26px;
+	}
+	.service .h-txt02 {
+		letter-spacing: normal;
+	}
+	.service02 .icon5 p {
+		padding: 10px;
+		padding-bottom: 0px;
+		width: 50%;
+		float: left;
+	}
+	.service02 .icon5 p:last-child {
+		width: 100%;
+		float: left;
+	}
+	.service02 .icon5 p span a {
+		line-height: 185px;
+	}
+	.service02 .icon5 p img {
+		width: 70px;
+	}
+	.service02 .icon5 p b {
+		position: static;
+		padding-top: 10px;
+	}
+	.service p span {
+		height: 140px !important;
+		width: 140px !important;
+		line-height: 120px;
+	}
+	.service02 p span a {
+		line-height: 225px;
+	}
+	.service02 .icon5 {
+		margin-bottom: 20px;
+	}
+	.service02 .icon5 p:last-child {
+		padding-bottom: 0px;
+	}
+	header h1#logo, header .tel {
+		width: 100%;
+		float: none;
+		text-align: center;
+		margin-top: 5px;
+	}
+	.contact {
+		background: url(../img/home/bg03.png) left -150px top no-repeat/cover;
+		padding: 45px 0px;
+	}
+	.contact-form div p {
+		float: none !important;
+		width: 100% !important;
+		margin-right: 0px !important;
+	}
+	.btn-more a {
+		width: 100%;
+	}
+	footer {
+		padding: 20px 0px 0px;
+	}
+	#fnav, header .tel :after, .service-wrapper .service-item h3 b:after, h3.subtitle b:after {
+		display: none !important;
+	}
+	.service-wrapper .service-item h3, h3.subtitle {
+		margin-bottom: 20px;
+		font-size: 20px;
+		text-align: center;
+	}
+	.service-wrapper .service-item h3 span, h3.subtitle span {
+		margin-right:  7px;
+		display: block;
+		margin: 0px auto 5px;
+	}
+	.service-item-imgs {
+		margin: 0px 0 45px 0px !Important;
+	}
+	.service-wrapper .service-item .service-item-imgs p {
+		width: 50%;
+		margin: 0px;
+		padding: 2%;
+	}
+	.intro .inner {
+		padding-bottom: 15px;
+	}
+	.intro .ms {
+		padding: 8%;
+	}
+	.advisor .advisor-wrap, .blog-item-wrap {
+		margin-right: 0px;
+	}
+	.advisor .advisor-wrap .advisor-item, .blog-item {
+		width: 100% !important;
+		float: none !important;
+		margin-bottom: 25px !important;
+	}
+	.blog-item {
+		padding-top: 15px !important;
+	}
+	.paginaton {
+		margin: 20px 0;
+		float: none;
+		text-align: center;
+	}
+	
+}// 480
