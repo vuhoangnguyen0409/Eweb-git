@@ -148,6 +148,13 @@ function wpb_sender_name( $original_email_from ) {
 add_filter( 'wp_mail_from', 'wpb_sender_email' );
 add_filter( 'wp_mail_from_name', 'wpb_sender_name' );
 
+function prefix_reset_metabox_positions(){
+  delete_user_meta( 1, 'meta-box-order_post' );
+  delete_user_meta( 1, 'meta-box-order_page' );
+  delete_user_meta( 1, 'meta-box-order_custom_post_type' );
+}
+add_action( 'admin_init', 'prefix_reset_metabox_positions' );
+
 
 
 ?>
