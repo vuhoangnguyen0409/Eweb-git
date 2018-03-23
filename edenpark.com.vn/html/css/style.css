@@ -104,8 +104,8 @@ i.circle {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-  /*-webkit-animation: Anicircle 2s infinite;
-  animation: Anicircle 2s infinite;*/ }
+  -webkit-animation: Anicircle 2s infinite;
+  animation: Anicircle 2s infinite; }
 
 /*------------------------------------ header-----------------------------------*/
 header {
